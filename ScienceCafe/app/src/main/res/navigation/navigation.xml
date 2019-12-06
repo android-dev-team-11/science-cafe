@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.sciencecafe.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_newsList"
+            app:destination="@id/newsList" />
+        <action
+            android:id="@+id/action_homePage_to_rewardList"
+            app:destination="@id/rewardList" />
+        <action
+            android:id="@+id/action_homePage_to_eventList"
+            app:destination="@id/eventList" />
+    </fragment>
+    <fragment
+        android:id="@+id/myEvents"
+        android:name="com.example.sciencecafe.MyEvents"
+        android:label="fragment_my_events"
+        tools:layout="@layout/fragment_my_events" />
+    <fragment
+        android:id="@+id/myRewards"
+        android:name="com.example.sciencecafe.MyRewards"
+        android:label="fragment_my_rewards"
+        tools:layout="@layout/fragment_my_rewards" />
+    <fragment
+        android:id="@+id/QRCode"
+        android:name="com.example.sciencecafe.QRCode"
+        android:label="fragment_qrcode"
+        tools:layout="@layout/fragment_qrcode" />
+    <fragment
+        android:id="@+id/approve"
+        android:name="com.example.sciencecafe.Approve"
+        android:label="fragment_approve"
+        tools:layout="@layout/fragment_approve" />
+    <fragment
+        android:id="@+id/myProfile"
+        android:name="com.example.sciencecafe.MyProfile"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/newsList"
+        android:name="com.example.sciencecafe.NewsList"
+        android:label="fragment_news_list"
+        tools:layout="@layout/fragment_news_list">
+        <action
+            android:id="@+id/action_newsList_to_rewardList"
+            app:destination="@id/rewardList" />
+        <action
+            android:id="@+id/action_newsList_to_eventList"
+            app:destination="@id/eventList" />
+        <action
+            android:id="@+id/action_newsList_to_newsDetail"
+            app:destination="@id/newsDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventList"
+        android:name="com.example.sciencecafe.EventList"
+        android:label="fragment_event_list"
+        tools:layout="@layout/fragment_event_list" >
+        <action
+            android:id="@+id/action_eventList_to_rewardList"
+            app:destination="@id/rewardList" />
+        <action
+            android:id="@+id/action_eventList_to_newsList"
+            app:destination="@id/newsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardList"
+        android:name="com.example.sciencecafe.RewardList"
+        android:label="fragment_reward_list"
+        tools:layout="@layout/fragment_reward_list">
+        <action
+            android:id="@+id/action_rewardList_to_newsList"
+            app:destination="@id/newsList" />
+        <action
+            android:id="@+id/action_rewardList_to_eventList"
+            app:destination="@id/eventList" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetail"
+        android:name="com.example.sciencecafe.NewsDetail"
+        android:label="fragment_news_detail"
+        tools:layout="@layout/fragment_news_detail" />
+</navigation>

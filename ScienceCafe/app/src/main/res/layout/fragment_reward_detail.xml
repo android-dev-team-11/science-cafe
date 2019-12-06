@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable type="com.example.model.Reward" name="reward" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".RewardDetail"
+        >
+        <LinearLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_arrow"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/back_button_text"
+                />
+
+            <TextView
+                android:id="@+id/appTitle"
+                style="@style/AppTitle"
+                android:layout_width="127dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="105dp"
+                android:layout_marginLeft="105dp"
+                android:text="@string/app_name"
+                />
+
+            <Button
+                android:id="@+id/signButton"
+                style="@style/TopButton"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:text="@string/sign_up_text"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/eventButton"
+                style="@style/MidButton"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="@string/events_admin"
+                />
+
+            <Button
+                android:id="@+id/rewardButton"
+                style="@style/MidButton"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="@string/rewards_admin"
+                />
+
+            <Button
+                android:id="@+id/newsButton"
+                style="@style/MidButton"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="@string/news_admin"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rewardTitle"
+            style="@style/RewardDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@{reward.name}"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/rewardDescription"
+            style="@style/RewardDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@{reward.description}"
+            />
+    </LinearLayout>
+</layout>

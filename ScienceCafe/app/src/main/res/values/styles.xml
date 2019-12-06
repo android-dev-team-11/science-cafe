@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="PageTitle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="MidButton">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TopButton">
+        <item name="android:background">@drawable/sign_button</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="RewardsList">
+        <item name="android:background">@drawable/curved_corner_border</item>
+    </style>
+
+    <style name="RewardDetail">
+        <item name="android:background">@drawable/right_angle_border</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="BlueButton">
+        <item name="android:background">@drawable/blue_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ApproveButton">
+        <item name="android:background">@drawable/curved_corner_border</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+</resources>

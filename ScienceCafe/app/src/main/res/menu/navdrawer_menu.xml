@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/myEvents"
+        android:title="@string/my_events" />
+    <item
+        android:id="@+id/myRewards"
+        android:title="@string/my_rewards" />
+    <item
+        android:id="@+id/QRCode"
+        android:title="@string/qr_code" />
+    <item android:title="@string/events_admin" />
+    <item android:title="@string/rewards_admin" />
+    <item
+        android:id="@+id/approve"
+        android:title="@string/approve_admin" />
+    <item
+        android:id="@+id/myProfile"
+        android:title="@string/my_profile" />
+</menu>
