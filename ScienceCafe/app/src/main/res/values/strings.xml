@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">ScienceCafe</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="my_events">My Events</string>
     <string name="event_detail">Event Detail</string>
@@ -10,5 +8,95 @@
     <string name="events_admin">Events</string>
     <string name="rewards_admin">Rewards</string>
     <string name="approve_admin">Approve</string>
+    <string name="news_admin">News</string>
     <string name="my_profile">My Profile</string>
+
+    <string name="user_name_name">Jhonny Cash</string>
+    <string name="sample_location">Los Angeles, CA</string>
+    <string name="random_num">94k</string>
+    <string name="first_name_label">First Name</string>
+    <string name="first_name">James</string>
+    <string name="last_name_label">Last Name</string>
+    <string name="last_name">Halper</string>
+    <string name="user_name_label">User Name</string>
+    <string name="user_name"></string>
+    <string name="email_label">Email</string>
+    <string name="email">james.thinks@sample.com</string>
+    <string name="edit_button_title">Edit</string>
+
+
+    <!-- menu 2 -->
+    <string name="news_detail_title_view">News Title</string>
+    <string name="event_button">Event</string>
+    <string name="reward_event">Reward</string>
+    <string name="go_to_news">News</string>
+
+    <!-- Emmanuel -->
+    <string name="approved_title">Approved</string>
+    <string name="pending_title">Pending</string>
+    <string name="rejected_title">Rejected</string>
+    <string name="reward_number_title">Reward 1</string>
+    <string name="add_reward_title">Add Reward</string>
+    <string name="delete_button_title">Delete</string>
+
+
+    <!-- Alex -->
+    <string name="sign_up_text">Sign up</string>
+    <string name="back_button_text">Back</string>
+    <string name="add_event">Add Event</string>
+    <string name="reject_text">Reject</string>
+
+    <!-- Jan -->
+
+    <string name="news_list_view">News</string>
+    <string name="news_text1">Hi, my name is Aleks.
+\n\nI love fish.
+\n\nThe kind that is alive and swims around in an aquarium or river, or a lake, and definitely the ocean.
+\nFun fact is that I have several aquariums and also a river.
+\n\nI like eating fish, too. Raw fish. Grilled fish. Smoked fish. Poached fish - not so much.
+\nAnd sometimes I even go fishing.
+\nAnd even less sometimes, I actually catch something.
+\n\nOnce, when I was camping in Canada, and very hungry, I even caught a large salmon with my hands.
+\n\nI\'ll be happy to teach you how to make your own aquarium.
+\nYou should ask someone else about fishing, though.\n\n
+    Hi, my name is Aleks.
+\n\nI love fish.
+\n\nThe kind that is alive and swims around in an aquarium or river, or a lake, and definitely the ocean.
+\nFun fact is that I have several aquariums and also a river.
+\n\nI like eating fish, too. Raw fish. Grilled fish. Smoked fish. Poached fish - not so much.
+\nAnd sometimes I even go fishing.
+\nAnd even less sometimes, I actually catch something.
+\n\nOnce, when I was camping in Canada, and very hungry, I even caught a large salmon with my hands.
+\n\nI\'ll be happy to teach you how to make your own aquarium.
+\nYou should ask someone else about fishing, though.\n\n
+    Hi, my name is Aleks.
+\n\nI love fish.
+\n\nThe kind that is alive and swims around in an aquarium or river, or a lake, and definitely the ocean.
+\nFun fact is that I have several aquariums and also a river.
+\n\nI like eating fish, too. Raw fish. Grilled fish. Smoked fish. Poached fish - not so much.
+\nAnd sometimes I even go fishing.
+\nAnd even less sometimes, I actually catch something.
+\n\nOnce, when I was camping in Canada, and very hungry, I even caught a large salmon with my hands.
+\n\nI\'ll be happy to teach you how to make your own aquarium.
+\nYou should ask someone else about fishing, though.\n\n</string>
+    <string name="news_detail_view">News News News</string>
+    <string name="news_title_view">Pokemon Sword and Shield Release</string>
+    <string name="author_view">Kotaku</string>
+    <string name="date_view">2019-10-05</string>
+    <string name="news_detail_text_view">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</string>
+
+    //Yi Wang
+    //For sign up page
+    <string name="FName_hint">First Name</string>
+    <string name="LName_hint">Last Name</string>
+    <string name="UName_hint">User Name</string>
+    <string name="Email_hint">E-mail</string>
+    <string name="Password_hint">Password</string>
+    <string name="RPassword_hint">Repeat Password</string>
+
+    //Event detail
+    <string name="event_description1"> This is a mock event.
+        \n\let's see if it is going to work</string>
+    //Event list
+
 </resources>

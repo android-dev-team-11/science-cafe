@@ -1,19 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MyProfile">
-<!-- put whatever view group you want here instead of the FrameLayou -->
+xmlns:tools="http://schemas.android.com/tools" tools:context=".MyProfile">
 
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
+<!-- put whatever view group you want here instead of the FrameLayou -->
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/colorBackground">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorBackground">
+            <!-- holds top part of user interface -->
+
+
+
+            <!-- top menu will come here -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                android:paddingLeft="2px"
+
+
+                android:background="@color/colorBackgroundTransition3">
+             <!-- Trying adding menu   -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+
+
+
+                <Button
+                    android:id="@+id/event_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/event_button"
+                    app:layout_constraintEnd_toStartOf="@+id/reward_button"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/reward_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reward_event"
+                    app:layout_constraintEnd_toStartOf="@+id/news_button"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/event_button"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/news_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/go_to_news"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/reward_button"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+            <!-- end of top menu start of edit button -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+
+
+            android:paddingBottom="1px"
+            android:background="@color/colorBackgroundTransition2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text = "@string/edit_button_title"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorBackgroundTransition4"/>
+
+        </LinearLayout>
+
+            <!-- end of edit button start of user information -->
+
+            <!-- scroll view to hold all user profile information-->
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="120px"
+                    android:paddingTop="50px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:text="@string/first_name_label"
+                        android:textSize="20sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="normal"
+                        android:text="@string/first_name"
+                        android:textSize="18sp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="12px"
+                        android:layout_marginBottom="12px"
+                        android:layout_marginRight="25px"
+                        android:background="@color/colorbar2">
+
+                    </View>
+
+
+                    <TextView
+                        android:paddingTop="50px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:text="@string/last_name_label"
+                        android:textSize="20sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="normal"
+                        android:text="@string/last_name"
+                        android:textSize="18sp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="12px"
+                        android:layout_marginBottom="12px"
+                        android:layout_marginRight="25px"
+                        android:background="@color/colorbar2">
+
+                    </View>
+
+                    <TextView
+                        android:paddingTop="50px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:text="@string/user_name_label"
+                        android:textSize="20sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="normal"
+                        android:text="@string/user_name_name"
+                        android:textSize="18sp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="12px"
+                        android:layout_marginBottom="12px"
+                        android:layout_marginRight="25px"
+                        android:background="@color/colorbar2">
+
+                    </View>
+                    <TextView
+                        android:paddingTop="50px"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        android:text="@string/email_label"
+                        android:textSize="20sp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="normal"
+                        android:text="@string/email"
+                        android:textSize="18sp"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="12px"
+                        android:layout_marginBottom="12px"
+                        android:layout_marginRight="25px"
+                        android:background="@color/colorbar2">
+
+                    </View>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    
+    
+
 
 
 </layout>

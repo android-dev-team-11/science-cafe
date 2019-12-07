@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/homePage">
+    app:startDestination="@id/newsList">
 
     <fragment
         android:id="@+id/homePage"
@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_homePage_to_newsList"
             app:destination="@id/newsList" />
+        <action
+            android:id="@+id/action_homePage_to_rewardList"
+            app:destination="@id/rewardList" />
+        <action
+            android:id="@+id/action_homePage_to_eventList"
+            app:destination="@id/eventList" />
     </fragment>
     <fragment
         android:id="@+id/myEvents"
@@ -43,5 +49,44 @@
         android:id="@+id/newsList"
         android:name="com.example.sciencecafe.NewsList"
         android:label="fragment_news_list"
-        tools:layout="@layout/fragment_news_list" />
+        tools:layout="@layout/fragment_news_list">
+        <action
+            android:id="@+id/action_newsList_to_rewardList"
+            app:destination="@id/rewardList" />
+        <action
+            android:id="@+id/action_newsList_to_eventList"
+            app:destination="@id/eventList" />
+        <action
+            android:id="@+id/action_newsList_to_newsDetail"
+            app:destination="@id/newsDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventList"
+        android:name="com.example.sciencecafe.EventList"
+        android:label="fragment_event_list"
+        tools:layout="@layout/fragment_event_list" >
+        <action
+            android:id="@+id/action_eventList_to_rewardList"
+            app:destination="@id/rewardList" />
+        <action
+            android:id="@+id/action_eventList_to_newsList"
+            app:destination="@id/newsList" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardList"
+        android:name="com.example.sciencecafe.RewardList"
+        android:label="fragment_reward_list"
+        tools:layout="@layout/fragment_reward_list">
+        <action
+            android:id="@+id/action_rewardList_to_newsList"
+            app:destination="@id/newsList" />
+        <action
+            android:id="@+id/action_rewardList_to_eventList"
+            app:destination="@id/eventList" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetail"
+        android:name="com.example.sciencecafe.NewsDetail"
+        android:label="fragment_news_detail"
+        tools:layout="@layout/fragment_news_detail" />
 </navigation>

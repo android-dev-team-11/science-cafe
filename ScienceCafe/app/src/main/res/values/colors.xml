@@ -3,4 +3,31 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+
+
+    <!-- Emmanuel -->
+
+    <color name="colorBackground">#1e5262</color>
+
+    <color name="colorTitleText">#362742</color>
+    <color name="colorSmallerTitle">#c5c9cf </color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorbar2">#898a56ab</color>
+    <color name="colorBackgroundTransition">#2c778f</color>
+    <color name="colorBackgroundTransition2">#259FC5</color>
+    <color name="colorBackgroundTransition3">#2086A6</color>
+    <color name="colorBackgroundTransition4">#287084</color>
+
+
+
+	<!-- Alex -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="buttonPressed">#B1BBC9</color>
+    <color name="blueButton">#3480EB</color>
+
+	<!-- Jan -->
+    <color name="black_text">#000000</color>
+
 </resources>
