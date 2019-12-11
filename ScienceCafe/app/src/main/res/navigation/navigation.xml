@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/newsList">
+    app:startDestination="@id/eventList">
 
     <fragment
         android:id="@+id/homePage"
@@ -89,4 +89,14 @@
         android:name="com.example.sciencecafe.NewsDetail"
         android:label="fragment_news_detail"
         tools:layout="@layout/fragment_news_detail" />
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.sciencecafe.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+    <fragment
+        android:id="@+id/eventDetail"
+        android:name="com.example.sciencecafe.EventDetail"
+        android:label="fragment_event_detail"
+        tools:layout="@layout/fragment_event_detail" />
 </navigation>

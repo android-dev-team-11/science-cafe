@@ -95,8 +95,9 @@
     <string name="RPassword_hint">Repeat Password</string>
 
     //Event detail
-    <string name="event_description1"> This is a mock event.
-        \n\let's see if it is going to work</string>
+    <string name="event_description1"> This is a mock event.\nlet\'s see if it is going to work</string>
+
     //Event list
+    <string name="event_list">Event List</string>
 
 </resources>

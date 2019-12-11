@@ -127,8 +127,8 @@
                     android:id="@+id/eventList"
                     android:layout_width="377dp"
                     android:layout_height="match_parent"
-                    android:background="@drawable/right_angle_border"
                     android:layout_gravity="center"
+                    android:background="@drawable/right_angle_border"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                     tools:listitem="@layout/list_item_event" />
             </androidx.core.widget.NestedScrollView>
