@@ -23,11 +23,14 @@ class EventDetail : Fragment() {
         binding = FragmentEventDetailBinding.inflate(inflater, container, false)
 
         binding.rewardButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_eventList_to_rewardList)
+            view.findNavController().navigate(R.id.action_eventDetail_to_rewardList)
         }
         binding.newsButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(R.id.action_eventList_to_newsList)
+            view.findNavController().navigate(R.id.action_eventDetail_to_newsList)
         }
+
+        binding.eventButton.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.action_eventDetail_to_eventList) }
 
         return binding.root
         //return inflater.inflate(R.layout.fragment_event_detail, container, false)

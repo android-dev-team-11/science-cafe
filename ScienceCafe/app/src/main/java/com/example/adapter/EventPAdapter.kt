@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.model.Event
 import com.example.sciencecafe.R
@@ -33,6 +34,9 @@ class EventPAdapter(val data: MutableList<Event>) : RecyclerView.Adapter<EventPA
 
         Picasso.get().load(item.imageUrl).into(holder.image)
         holder?.name?.text = item.name
+
+        holder.view.setOnClickListener { view: View? ->
+            view?.findNavController()?.navigate(R.id.action_eventList_to_eventDetail) }
     }
 
     class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {

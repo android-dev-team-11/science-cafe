@@ -59,6 +59,9 @@
         <action
             android:id="@+id/action_newsList_to_newsDetail"
             app:destination="@id/newsDetail" />
+        <action
+            android:id="@+id/action_newsList_to_eventList2"
+            app:destination="@id/eventList" />
     </fragment>
     <fragment
         android:id="@+id/eventList"
@@ -71,6 +74,9 @@
         <action
             android:id="@+id/action_eventList_to_newsList"
             app:destination="@id/newsList" />
+        <action
+            android:id="@+id/action_eventList_to_eventDetail"
+            app:destination="@id/eventDetail" />
     </fragment>
     <fragment
         android:id="@+id/rewardList"
@@ -82,6 +88,9 @@
             app:destination="@id/newsList" />
         <action
             android:id="@+id/action_rewardList_to_eventList"
+            app:destination="@id/eventList" />
+        <action
+            android:id="@+id/action_rewardList_to_eventList2"
             app:destination="@id/eventList" />
     </fragment>
     <fragment
@@ -98,5 +107,15 @@
         android:id="@+id/eventDetail"
         android:name="com.example.sciencecafe.EventDetail"
         android:label="fragment_event_detail"
-        tools:layout="@layout/fragment_event_detail" />
+        tools:layout="@layout/fragment_event_detail" >
+        <action
+            android:id="@+id/action_eventDetail_to_rewardList"
+            app:destination="@id/rewardList" />
+        <action
+            android:id="@+id/action_eventDetail_to_eventList"
+            app:destination="@id/eventList" />
+        <action
+            android:id="@+id/action_eventDetail_to_newsList"
+            app:destination="@id/newsList" />
+    </fragment>
 </navigation>
