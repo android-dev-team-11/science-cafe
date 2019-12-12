@@ -25,7 +25,6 @@
     <string name="edit_button_title">Edit</string>
 
 
-
     <!-- menu 2 -->
     <string name="news_detail_title_view">News Title</string>
     <string name="event_button">Event</string>
@@ -41,7 +40,7 @@
     <string name="delete_button_title">Delete</string>
 
 
-	<!-- Alex -->
+    <!-- Alex -->
     <string name="sign_up_text">Sign up</string>
     <string name="back_button_text">Back</string>
     <string name="add_event">Add Event</string>
@@ -85,5 +84,20 @@
     <string name="author_view">Kotaku</string>
     <string name="date_view">2019-10-05</string>
     <string name="news_detail_text_view">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</string>
+
+    //Yi Wang
+    //For sign up page
+    <string name="FName_hint">First Name</string>
+    <string name="LName_hint">Last Name</string>
+    <string name="UName_hint">User Name</string>
+    <string name="Email_hint">E-mail</string>
+    <string name="Password_hint">Password</string>
+    <string name="RPassword_hint">Repeat Password</string>
+
+    //Event detail
+    <string name="event_description1"> This is a mock event.\nlet\'s see if it is going to work</string>
+
+    //Event list
+    <string name="event_list">Event List</string>
 
 </resources>

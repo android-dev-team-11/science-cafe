@@ -35,6 +35,8 @@ class RewardList : Fragment() {
         binding.newsButton.setOnClickListener { view: View ->
             view.findNavController().navigate(R.id.action_rewardList_to_newsList)
         }
+
+
         return binding.root
         //return inflater.inflate(R.layout.fragment_reward_list, container, false)
     }

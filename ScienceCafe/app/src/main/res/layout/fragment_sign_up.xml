@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SignUp">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/FirstNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="First Name"
+            app:layout_constraintStart_toStartOf="@+id/FNameText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/FNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/FName_hint"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstNameView" />
+
+        <EditText
+            android:id="@+id/LNameText"
+            app:layout_constraintStart_toStartOf="@+id/FNameText"
+            app:layout_constraintTop_toBottomOf="@+id/FNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/LName_hint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/UNameText"
+            app:layout_constraintStart_toStartOf="@+id/LNameText"
+            app:layout_constraintTop_toBottomOf="@+id/LNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/UName_hint"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/UNameText"
+            app:layout_constraintTop_toBottomOf="@+id/UNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="TextView" />
+
+        <EditText
+            android:id="@+id/EmailText"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/Email_hint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/PasswordText"
+            app:layout_constraintStart_toStartOf="@+id/EmailText"
+            app:layout_constraintTop_toBottomOf="@+id/EmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/Password_hint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/RPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/RPassword_hint"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/PasswordText"
+            app:layout_constraintTop_toBottomOf="@+id/PasswordText"
+            app:layout_constraintVertical_bias="0.032" />
+
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Submit"
+            app:layout_constraintStart_toStartOf="@+id/RPasswordText"
+            app:layout_constraintTop_toBottomOf="@+id/RPasswordText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

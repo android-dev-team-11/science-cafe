@@ -25,6 +25,15 @@ import com.fasterxml.jackson.annotation.JsonIgnore;*/
 public class Event implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
+	public Event (){
+
+	}
+
+	public Event (Long id, String imageUrl){
+		this.id = id;
+		this.imageUrl = imageUrl;
+		this.name = name;
+	};
 	
 //	status 
 //	submitted  0 
