@@ -42,18 +42,21 @@ Sci Cafe allows users to create and organize academic and social events. The and
 
 ## Implementation
 
-### AWS - API - Calls
+### AWS - API - Calls 
 
 ![API - Calls](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/aws_diagram.png)
 <br>
 ![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/api_calls_doc.gif)
 
-### QR Code
+### QR Code - Checking In to Events
 
-![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/qr_checkin.gif)
+![User checks into Event using QR Code](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/qr_checkin.gif)
 
 
-### Login - creating Tokens
+### Tokens - at Login: Distinguish User Types
+![Diagram showing what tokens does in application distinguish user types](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/token_effect.png)
+
+
 
 
 #### Wire Frames
