@@ -1,6 +1,6 @@
 # [Sci Cafe](https://sci-cafe.com/home)
 
-Authors: [Yi Chen](https://github.com/chenyii426) | [Emmanuel Cocom](https://github.com/emmanuelcodev) | [Yi Wang](https://github.com/superhotdogzz) | [Jan Bautista](https://github.com/janB003) | [Alex Horjase](https://github.com/AHorejsi) 
+Authors: [Yi Chen](https://github.com/chenyii426) | [Emmanuel Cocom](https://github.com/emmanuelcodev) | [Yi Wang](https://github.com/superhotdogzz) | [Jan Bautista](https://github.com/janB003) | [Alex Horejsi](https://github.com/AHorejsi) 
 
 
 
