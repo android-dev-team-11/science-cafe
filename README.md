@@ -19,22 +19,22 @@ Sci Cafe allows users to create and organize academic and social events. The and
 - Sci Cafe provides a campus specific information hub for CSULA students.
 
 ## How Do users Interact with the Android Application?
+#### Answer: 2 Menus
 
-#### Community Related Activities - via Menu 1
-  - News Button: News that is relavent to all students.
-  - Events Button: Events that have been created by other users.
-  - Rewards Button: Rewards being offered by other users
+#### 1st Menu: Community Related Activities
+  - News: News that is relavent to all students.
+  - Events: Events that have been created by other users.
+  - Rewards: Rewards being offered by other users.
   
 ![Menu1 ](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/menu1.png)
 
     
 
-#### User Specific Activities - via  Menu2 (Nav Drawer)
-  - Events: The events you as a user have made
+#### 2nd Menu: User Specific Activities
+  - Events: The events you have made.
   - Rewards: Any rewards you have earned by attending qualified events.
   - Profile: User settings
   - QR Code: Used to check in to events
- 
 ![Menu2](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/Menu_1_personal.png)
 
 
