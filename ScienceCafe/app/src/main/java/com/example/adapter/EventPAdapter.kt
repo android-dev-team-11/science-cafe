@@ -11,7 +11,8 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.model.Event
+
+import com.example.models.Event
 import com.example.sciencecafe.R
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.list_item_eventp.view.*
