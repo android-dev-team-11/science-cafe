@@ -65,4 +65,5 @@ Sci Cafe allows users to create and organize academic and social events. The and
 ## Video Demonstration
 <br/>
 <a href="https://www.youtube.com/watch?v=tPydaW5l4hs&t=29s" target="_blank"><img src="https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/thumb_nail.png" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="620" height="350" border="10" /></a>
+
