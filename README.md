@@ -7,32 +7,30 @@ Authors: [Yi Chen](https://github.com/chenyii426) | [Emmanuel Cocom](https://git
 ## About Our App
 Sci Cafe allows users to create and organize academic and social events. The android application we built acts a client to the website.
 
-<br/>
+
 #### The Website 
 
 ![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/website_gif.gif)
 
 
 ## Why did we build it ?
-- Students are not always aware about the activities and oppurtunites available to them on or near campus. Events include club meetings, carreer fairs, fundraisers, and other social gatherings. 
-- Our hope is that Sci Cafe can alleviate this problem and provide a more campus specific information hub for CSULA students.
+- Students are not always aware about the activities and oppurtunites available to them on. 
 
-## How Do users Interact with the App?
+- Sci Cafe provides a campus specific information hub for CSULA students.
+
+## How Do users Interact with the Android Application?
 
 #### 2. Community Related Activities - via Menu 1
-  - News Available
-  - Events Available  
-    - Sign Up for Events
-  - Rewards Available
-    -How does this work?
-
-
+  - News Button: News that is relavent to all students.
+  - Events Available: Events that have been created by other users.
+  - Rewards Available: Rewards being offered by other users
+    
 
 #### 3. User Specific Activities - via  Menu2 (Nav Drawer)
-  - Events
-  - Rewards
-  - Profile
-  - QR Code
+  - Events: The events you as a user have made
+  - Rewards: Any rewards you have earned by attending qualified events.
+  - Profile: User settings
+  - QR Code: Used to check in to events
 
 
 ## Implementation
@@ -45,12 +43,13 @@ Sci Cafe allows users to create and organize academic and social events. The and
 
 ### QR Code
 
+![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/qr_checkin.gif)
+
 
 ### Login - creating Tokens
 
 
 #### Wire Frames
-
 ![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/wire_frames.gif)
 
 
