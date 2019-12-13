@@ -7,13 +7,15 @@ Authors: [Yi Chen](https://github.com/chenyii426) | [Emmanuel Cocom](https://git
 ## About Our App
 Sci Cafe allows users to create and organize academic and social events. The android application we built acts a client to the website.
 
-
+<br/>
 #### The Website 
+
 ![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/website_gif.gif)
 
 
 ## Why did we build it ?
-Students are not always aware about the activities and oppurtunites available to them on or near campus. Such events include club meetings, carreer fairs, fundraisers, and other social gatherings. Our hope is that Sci Cafe can alleviate this problem and provide a more campus specific information hub for CSULA students.
+- Students are not always aware about the activities and oppurtunites available to them on or near campus. Events include club meetings, carreer fairs, fundraisers, and other social gatherings. 
+- Our hope is that Sci Cafe can alleviate this problem and provide a more campus specific information hub for CSULA students.
 
 ## How Do users Interact with the App?
 
