@@ -20,22 +20,22 @@ Sci Cafe allows users to create and organize academic and social events. The and
 
 ## How Do users Interact with the Android Application?
 
-#### 2. Community Related Activities - via Menu 1
+#### Community Related Activities - via Menu 1
   - News Button: News that is relavent to all students.
   - Events Button: Events that have been created by other users.
   - Rewards Button: Rewards being offered by other users
   
-![API - Calls](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/Menu2_community.png)
+![Menu1 ](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/menu1.png)
 
     
 
-#### 3. User Specific Activities - via  Menu2 (Nav Drawer)
+#### User Specific Activities - via  Menu2 (Nav Drawer)
   - Events: The events you as a user have made
   - Rewards: Any rewards you have earned by attending qualified events.
   - Profile: User settings
   - QR Code: Used to check in to events
-  <br>
-![API - Calls](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/Menu_1_personal.png)
+ 
+![Menu2](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/Menu_1_personal.png)
 
 
 ## Implementation
