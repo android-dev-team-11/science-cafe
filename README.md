@@ -33,8 +33,10 @@ Sci Cafe allows users to create and organize academic and social events. The and
 #### 2nd Menu: User Specific Activities
   - Events: The events you have made.
   - Rewards: Any rewards you have earned by attending qualified events.
-  - Profile: User settings
+  - Profile: User related information, events history, rewards you have earned etc...
   - QR Code: Used to check in to events
+  
+  
 ![Menu2](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/Menu_1_personal.png)
 
 
