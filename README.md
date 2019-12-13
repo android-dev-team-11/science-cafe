@@ -61,11 +61,6 @@ Sci Cafe allows users to create and organize academic and social events. The and
 
 
 
-#### Wire Frames
-![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/wire_frames.gif)
-
-
-
 
 ## Demo - A More Inuitive Look
 Video: 1:30 minutes
