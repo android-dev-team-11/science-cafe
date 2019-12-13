@@ -25,7 +25,6 @@
     <string name="edit_button_title">Edit</string>
 
 
-
     <!-- menu 2 -->
     <string name="news_detail_title_view">News Title</string>
     <string name="event_button">Event</string>
@@ -41,7 +40,7 @@
     <string name="delete_button_title">Delete</string>
 
 
-	<!-- Alex -->
+    <!-- Alex -->
     <string name="sign_up_text">Sign up</string>
     <string name="back_button_text">Back</string>
     <string name="add_event">Add Event</string>

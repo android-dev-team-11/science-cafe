@@ -3,90 +3,178 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/homePage">
+    app:startDestination="@id/homePageFragment">
 
     <fragment
-        android:id="@+id/homePage"
-        android:name="com.example.sciencecafe.HomePage"
-        android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page" >
+        android:id="@+id/myEvents"
+        android:name="com.example.activities.MyEvents"
+        android:label="My Events"
+        tools:layout="@layout/fragment_my_events">
         <action
-            android:id="@+id/action_homePage_to_newsList"
-            app:destination="@id/newsList" />
+            android:id="@+id/action_myEvents_to_checkIn"
+            app:destination="@id/checkIn" />
         <action
-            android:id="@+id/action_homePage_to_rewardList"
-            app:destination="@id/rewardList" />
-        <action
-            android:id="@+id/action_homePage_to_eventList"
-            app:destination="@id/eventList" />
+            android:id="@+id/action_myEvents_to_postEvent"
+            app:destination="@id/postEvent" />
     </fragment>
     <fragment
-        android:id="@+id/myEvents"
-        android:name="com.example.sciencecafe.MyEvents"
-        android:label="fragment_my_events"
-        tools:layout="@layout/fragment_my_events" />
-    <fragment
         android:id="@+id/myRewards"
-        android:name="com.example.sciencecafe.MyRewards"
-        android:label="fragment_my_rewards"
+        android:name="com.example.activities.MyRewards"
+        android:label="My Rewards"
         tools:layout="@layout/fragment_my_rewards" />
     <fragment
         android:id="@+id/QRCode"
-        android:name="com.example.sciencecafe.QRCode"
-        android:label="fragment_qrcode"
+        android:name="com.example.activities.MyQRCode"
+        android:label="My QRCode"
         tools:layout="@layout/fragment_qrcode" />
     <fragment
         android:id="@+id/approve"
-        android:name="com.example.sciencecafe.Approve"
-        android:label="fragment_approve"
-        tools:layout="@layout/fragment_approve" />
+        android:name="com.example.activities.Approve"
+        android:label="Approve"
+        tools:layout="@layout/fragment_approve" >
+        <action
+            android:id="@+id/action_approve_to_eventDetail"
+            app:destination="@id/eventDetail" />
+    </fragment>
     <fragment
         android:id="@+id/myProfile"
-        android:name="com.example.sciencecafe.MyProfile"
-        android:label="fragment_my_profile"
-        tools:layout="@layout/fragment_my_profile" />
+        android:name="com.example.activities.MyProfile"
+        android:label="User Center"
+        tools:layout="@layout/fragment_my_profile">
+        <action
+            android:id="@+id/action_myProfile_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_myProfile_to_eventDetail"
+            app:destination="@id/eventDetail" />
+        <action
+            android:id="@+id/action_myProfile_to_rewardDetail"
+            app:destination="@id/rewardDetail" />
+    </fragment>
     <fragment
         android:id="@+id/newsList"
-        android:name="com.example.sciencecafe.NewsList"
-        android:label="fragment_news_list"
+        android:name="com.example.activities.NewsList"
+        android:label="News"
         tools:layout="@layout/fragment_news_list">
-        <action
-            android:id="@+id/action_newsList_to_rewardList"
-            app:destination="@id/rewardList" />
-        <action
-            android:id="@+id/action_newsList_to_eventList"
-            app:destination="@id/eventList" />
         <action
             android:id="@+id/action_newsList_to_newsDetail"
             app:destination="@id/newsDetail" />
+        <argument
+            android:name="newId"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/eventList"
-        android:name="com.example.sciencecafe.EventList"
-        android:label="fragment_event_list"
-        tools:layout="@layout/fragment_event_list" >
+        android:name="com.example.activities.EventList"
+        android:label="Events"
+        tools:layout="@layout/fragment_event_list">
         <action
-            android:id="@+id/action_eventList_to_rewardList"
-            app:destination="@id/rewardList" />
-        <action
-            android:id="@+id/action_eventList_to_newsList"
-            app:destination="@id/newsList" />
+            android:id="@+id/action_eventList_to_eventDetail"
+            app:destination="@id/eventDetail" />
     </fragment>
     <fragment
         android:id="@+id/rewardList"
-        android:name="com.example.sciencecafe.RewardList"
-        android:label="fragment_reward_list"
+        android:name="com.example.activities.RewardList"
+        android:label="Rewards"
         tools:layout="@layout/fragment_reward_list">
         <action
-            android:id="@+id/action_rewardList_to_newsList"
-            app:destination="@id/newsList" />
-        <action
-            android:id="@+id/action_rewardList_to_eventList"
-            app:destination="@id/eventList" />
+            android:id="@+id/action_rewardList_to_rewardDetail"
+            app:destination="@id/rewardDetail" />
     </fragment>
     <fragment
         android:id="@+id/newsDetail"
-        android:name="com.example.sciencecafe.NewsDetail"
-        android:label="fragment_news_detail"
-        tools:layout="@layout/fragment_news_detail" />
+        android:name="com.example.activities.NewsDetail"
+        android:label=" News Detail"
+        tools:layout="@layout/fragment_news_detail">
+        <argument
+            android:name="newId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.activities.HomePageFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homePageFragment_to_newsDetail"
+            app:destination="@id/newsDetail" />
+        <action
+            android:id="@+id/action_homePageFragment_to_eventList"
+            app:destination="@id/eventList" />
+        <action
+            android:id="@+id/action_homePageFragment_to_eventDetail"
+            app:destination="@id/eventDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.activities.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.activities.SignUpFragment"
+        android:label="Sign Up">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/programList"
+        android:name="com.example.activities.ProgramList"
+        android:label="Programs">
+        <action
+            android:id="@+id/action_programList_to_programDetail"
+            app:destination="@id/programDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDetail"
+        android:name="com.example.activities.EventDetail"
+        android:label="Event Detail"
+        tools:layout="@layout/fragment_event_detail">
+        <argument
+            android:name="eventId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardDetail"
+        android:name="com.example.activities.RewardDetail"
+        android:label="Reward Detail"
+        tools:layout="@layout/fragment_reward_detail">
+        <argument
+            android:name="rewardId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_rewardDetail_to_eventDetail"
+            app:destination="@id/eventDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/programDetail"
+        android:name="com.example.activities.ProgramDetail"
+        android:label="Program Detail"
+        tools:layout="@layout/fragment_program_detail">
+        <argument
+            android:name="programId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkIn"
+        android:name="com.example.activities.CheckIn"
+        android:label="Check In">
+        <argument
+            android:name="eventId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/postEvent"
+        android:name="com.example.activities.PostEvent"
+        android:label="PostEvent" >
+        <action
+            android:id="@+id/action_postEvent_to_myEvents"
+            app:destination="@id/myEvents" />
+    </fragment>
 </navigation>

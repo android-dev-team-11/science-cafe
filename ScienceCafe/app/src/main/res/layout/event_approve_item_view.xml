@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toEndOf="@+id/event_image"
+            app:layout_constraintTop_toTopOf="@+id/event_image"
+            tools:text="Christmas Event" />
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/event_title"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/event_title"
+            app:layout_constraintTop_toBottomOf="@+id/event_title"
+            tools:text="2019-12-25" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/event_image" />
+
+        <Button
+            android:id="@+id/approve"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:background="#03A9F4"
+            android:shadowColor="#00009688"
+            android:text="Approve"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@id/event_image"
+            app:layout_constraintTop_toBottomOf="@id/event_date" />
+
+        <Button
+            android:id="@+id/reject"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:background="#E61C0D"
+            android:text="Reject"
+            android:visibility="visible"
+            app:layout_constraintStart_toEndOf="@id/approve"
+            app:layout_constraintTop_toBottomOf="@id/event_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

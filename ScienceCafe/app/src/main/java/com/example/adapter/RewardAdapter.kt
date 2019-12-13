@@ -3,33 +3,59 @@ package com.example.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.example.model.Reward
+import com.example.models.Reward
+import com.example.models.Event
 import com.example.sciencecafe.R
-import kotlinx.android.synthetic.main.list_item_reward.view.*
+import com.example.sciencecafe.databinding.EventItemViewBinding
+import com.example.sciencecafe.databinding.RewardItemViewBinding
+import com.example.utils.convertLongToDateString
 
-class RewardAdapter(val data: MutableList<Reward>) : RecyclerView.Adapter<RewardAdapter.ViewHolder>() {
-    class ViewHolder(val view: View) : RecyclerView.ViewHolder(view) {
-        val rewardText: TextView = this.view.rewardText
-    }
+class RewardAdapter(val items: List<Reward>) : RecyclerView.Adapter<RewardAdapter.ViewHolder>() {
 
-    override fun getItemCount(): Int = this.data.size
+    private lateinit var binding: RewardItemViewBinding
+
+    private lateinit var onItemClickListener: OnItemClickListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val layoutInflater = LayoutInflater.from(parent.context)
-        val view = layoutInflater.inflate(R.layout.list_item_reward, parent, false) as ConstraintLayout
-
-        return ViewHolder(view)
+        val inflater = LayoutInflater.from(parent.context)
+        binding = RewardItemViewBinding.inflate(inflater)
+        return ViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = this.data[position]
+    override fun getItemCount(): Int = items.size
 
-        holder.rewardText.text = item.name
-        holder.rewardText.setOnClickListener{
-            println("TEST1")
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(items[position])
+        holder.itemView.setOnClickListener {
+            onItemClickListener?.onItemClick(holder.itemView, position)
         }
+    }
+
+
+    class ViewHolder constructor(val binding: RewardItemViewBinding) : RecyclerView.ViewHolder(binding.root){
+        val rewardTitle: TextView = binding.title
+        val criteria: TextView = binding.criteria
+
+        fun bind(item: Reward) {
+            rewardTitle.text = item.name
+            criteria.text = "Criteria:" + item.criteria
+        }
+
+    }
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.onItemClickListener = listener
+    }
+
+
+    interface OnItemClickListener{
+        fun onItemClick(view: View, position: Int)
+    }
+
+    class RewardListener(val clickListener: (rewardId: Int) -> Unit) {
+        fun onClick(reward: Reward) = clickListener(reward.id)
     }
 }

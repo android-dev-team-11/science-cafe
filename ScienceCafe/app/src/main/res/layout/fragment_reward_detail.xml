@@ -1,107 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.activities.RewardDetail">
+    <!-- put whatever view group you want here instead of the FrameLayou -->
 
-    <data>
-        <variable type="com.example.model.Reward" name="reward" />
-    </data>
-
-    <LinearLayout
-        android:id="@+id/mainView"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".RewardDetail"
-        >
-        <LinearLayout
-            android:id="@+id/topView"
+        android:layout_height="644dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal"
-            >
-            <ImageButton
-                android:id="@+id/backButton"
-                android:layout_width="40dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/back_arrow"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                android:contentDescription="@string/back_button_text"
-                />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/reward_image"
+                android:layout_width="0dp"
+                android:layout_height="266dp"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/present"
+                tools:src="@drawable/present" />
 
             <TextView
-                android:id="@+id/appTitle"
-                style="@style/AppTitle"
-                android:layout_width="127dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="105dp"
-                android:layout_marginLeft="105dp"
-                android:text="@string/app_name"
-                />
+                android:id="@+id/reward_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/news_title_view"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reward_image" />
 
-            <Button
-                android:id="@+id/signButton"
-                style="@style/TopButton"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="35dp"
-                android:layout_marginLeft="35dp"
-                android:text="@string/sign_up_text"
-                />
-        </LinearLayout>
+            <TextView
+                android:id="@+id/date_range"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/author_view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/criteria"
+                app:layout_constraintTop_toBottomOf="@+id/reward_name" />
 
-        <LinearLayout
-            android:id="@+id/buttons"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/criteria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
 
-            <Button
-                android:id="@+id/eventButton"
-                style="@style/MidButton"
-                android:layout_width="140dp"
-                android:layout_height="match_parent"
-                android:text="@string/events_admin"
-                />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
 
-            <Button
-                android:id="@+id/rewardButton"
-                style="@style/MidButton"
-                android:layout_width="140dp"
-                android:layout_height="match_parent"
-                android:text="@string/rewards_admin"
-                />
+                android:text="@string/date_view"
+                app:layout_constraintEnd_toStartOf="@+id/date_range"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reward_name" />
 
-            <Button
-                android:id="@+id/newsButton"
-                style="@style/MidButton"
-                android:layout_width="140dp"
-                android:layout_height="match_parent"
-                android:text="@string/news_admin"
-                />
-        </LinearLayout>
+            <WebView
+                android:id="@+id/reward_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/date_range" />
 
-        <TextView
-            android:id="@+id/rewardTitle"
-            style="@style/RewardDetail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="@{reward.name}"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/qualified_event_list"
+                android:layout_width="411dp"
+                android:layout_height="610dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="50dp"
+                android:clipToPadding="false"
+                android:padding="6dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reward_description"
+                tools:listitem="@layout/event_item_view" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
-        <TextView
-            android:id="@+id/rewardDescription"
-            style="@style/RewardDetail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:text="@{reward.description}"
-            />
-    </LinearLayout>
+
 </layout>

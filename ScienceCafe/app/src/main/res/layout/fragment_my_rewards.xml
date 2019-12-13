@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
-tools:context=".MyRewards">
+tools:context="com.example.activities.MyRewards">
 <!-- put whatever view group you want here instead of the FrameLayou -->
 
     <!-- put whatever view group you want here instead of the FrameLayou -->

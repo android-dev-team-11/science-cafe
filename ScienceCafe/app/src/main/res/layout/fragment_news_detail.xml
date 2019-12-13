@@ -2,16 +2,16 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
-tools:context=".NewsDetail">
+tools:context="com.example.activities.NewsDetail">
 <!-- put whatever view group you want here instead of the FrameLayou -->
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="644dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
 
@@ -29,21 +29,7 @@ tools:context=".NewsDetail">
                 tools:src="@tools:sample/backgrounds/scenic" />
 
             <TextView
-                android:id="@+id/news_detail_text_view"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/news_image"
-                android:layout_marginStart="16dp"
-
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="@string/news_detail_text_view"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/author_view" />
-
-            <TextView
-                android:id="@+id/news_title_view"
+                android:id="@+id/news_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -56,7 +42,7 @@ tools:context=".NewsDetail">
                 app:layout_constraintTop_toBottomOf="@+id/news_image" />
 
             <TextView
-                android:id="@+id/author_view"
+                android:id="@+id/postedDate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -67,10 +53,10 @@ tools:context=".NewsDetail">
                 android:text="@string/author_view"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/news_date_view"
-                app:layout_constraintTop_toBottomOf="@+id/news_title_view" />
+                app:layout_constraintTop_toBottomOf="@+id/news_title" />
 
             <TextView
-                android:id="@+id/news_date_view"
+                android:id="@+id/author"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -81,9 +67,24 @@ tools:context=".NewsDetail">
                 android:layout_marginRight="8dp"
 
                 android:text="@string/date_view"
-                app:layout_constraintEnd_toStartOf="@+id/author_view"
+                app:layout_constraintEnd_toStartOf="@+id/postedDate"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/news_title_view" />
+                app:layout_constraintTop_toBottomOf="@+id/news_title" />
+
+            <WebView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/postedDate" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 

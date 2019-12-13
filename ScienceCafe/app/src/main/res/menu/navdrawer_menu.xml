@@ -3,20 +3,31 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/loginFragment"
+        android:title="Login" />
+    <item
         android:id="@+id/myEvents"
-        android:title="@string/my_events" />
+        android:title="@string/my_events"
+        android:visible="false" />
     <item
         android:id="@+id/myRewards"
         android:title="@string/my_rewards" />
     <item
         android:id="@+id/QRCode"
-        android:title="@string/qr_code" />
-    <item android:title="@string/events_admin" />
-    <item android:title="@string/rewards_admin" />
+        android:title="@string/qr_code"
+        android:visible="false" />
+<!--    <item-->
+<!--        android:title="@string/events_admin"-->
+<!--        android:visible="false" />-->
+<!--    <item-->
+<!--        android:title="@string/rewards_admin"-->
+<!--        android:visible="false" />-->
     <item
         android:id="@+id/approve"
-        android:title="@string/approve_admin" />
+        android:title="@string/approve_admin"
+        android:visible="false" />
     <item
         android:id="@+id/myProfile"
-        android:title="@string/my_profile" />
+        android:title="@string/my_profile"
+        android:visible="false" />
 </menu>
