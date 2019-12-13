@@ -53,7 +53,9 @@ Sci Cafe allows users to create and organize academic and social events. The and
 ![User checks into Event using QR Code](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/qr_checkin.gif)
 
 
-### Tokens - at Login: Distinguish User Types
+### Tokens - at Login:
+##### Purpose:  Distinguish User Types
+![Diagram showing what tokens does in application distinguish user types](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/token.png)
 ![Diagram showing what tokens does in application distinguish user types](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/token_effect.png)
 
 
