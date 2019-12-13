@@ -5,7 +5,7 @@ Authors: [Yi Chen](https://github.com/chenyii426) | [Emmanuel Cocom](https://git
 
 
 ## About Our App
-Sci Cafe allows users to create and organize academic and social events. 
+Sci Cafe allows users to create and organize academic and social events. The android application we built acts a client to the website.
 
 
 ## Why did we build it ?
@@ -20,6 +20,8 @@ Students are not always aware about the activities and oppurtunites available to
   - Rewards Available
     -How does this work?
 
+
+
 #### 3. User Specific Activities - via  Menu2 (Nav Drawer)
   - Events
   - Rewards
@@ -29,19 +31,27 @@ Students are not always aware about the activities and oppurtunites available to
 
 ## Implementation
 
+### AWS - API - Calls
+
+![API - Calls](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/aws_diagram.png)
+<br>
+![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/api_calls_doc.gif)
+
+### QR Code
+
+
+### Login - creating Tokens
+
+
 #### Wire Frames
 
-
 ![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/wire_frames.gif)
+
+
 
 #### The Website 
 
 ![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/website_gif.gif)
-
-
-#### AWS - API Calls
-![Alt Text](https://github.com/android-dev-team-11/science-cafe/blob/master/meta_resources/api_calls_doc.gif)
-
 
 
 ## Demo - A More Inuitive Look
